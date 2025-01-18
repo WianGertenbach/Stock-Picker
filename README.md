@@ -16,3 +16,7 @@ The program loops over the array and checks the following:
 
 This process continues until the loop has finished. 
 It then returns the *best_pair* array. 
+
+## Addressing edge cases
+Edge cases are addressed by this implementation as the profit is calculated or not calculated during execution. 
+Let's say that there is only a single value (10) in the prices array. The program will set the minimum price to 10 since it's smaller than the initialised value (Infinity). However since this happens, we know that we cannot make a profit when the the new price is less than the previous (this would result in a loss). The same applies for an array with only descending values. 
